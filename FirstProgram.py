@@ -55,6 +55,9 @@ print('Data Structures - Number + String Array', arr)
 arr = [1,2,3]
 print('Data Structures - Number Array', arr)
 
+squares = [x**2 for x in range(10)]
+print('creating iterable lists',squares)
+
 # Dictionaries - Objects
 obj = {
     'name': 'John',
@@ -70,10 +73,50 @@ print("Sets:", my_set)
 my_tuple = (1,2, 3)
 print('Tuples:',my_tuple)
 
-
 # List of tuples
 pairs = [(1, 'one'), (2, 'two'), (3, 'three')]
 
 # Sort by the second element in each tuple
 sorted_pairs = sorted(pairs, key=lambda x: x[1])
 print(sorted_pairs)
+
+# Error and Exception Handling
+try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print("Error: Cannot divide by zero!")
+else:
+    print("Division successful:", result)
+finally:
+    print("This block always runs.")
+    
+#Generators
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+for number in countdown(5):
+    print(number)
+ 
+#Decorators -  Modify the behavior of a function or class method.   
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello I am a function!")
+
+say_hello()
+
+#Regular Expressions (regex) - Find patterns in strings
+import re
+pattern = r"\d+"
+text = "There are 123 apples"
+match = re.findall(pattern, text)
+print(match)  # Output: ['123']
+
