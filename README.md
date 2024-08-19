@@ -13,3 +13,4 @@
         - Dictionary
         - Set
         - Tuple
+        - Maps
