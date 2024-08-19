@@ -120,3 +120,76 @@ text = "There are 123 apples"
 match = re.findall(pattern, text)
 print(match)  # Output: ['123']
 
+
+# Stack Implementation using a List
+stack = []
+
+# Push elements onto the stack
+stack.append(1)
+stack.append(2)
+stack.append(3)
+
+print("Stack after pushing elements:", stack)
+
+# Pop elements from the stack
+top_element = stack.pop()
+print("Popped element:", top_element)
+print("Stack after popping an element:", stack)
+
+# Peek at the top element
+if stack:
+    top_element = stack[-1]
+    print("Top element:", top_element)
+
+
+from collections import deque
+# Queue Implementation using deque
+
+queue = deque()
+
+# Enqueue elements
+queue.append(1)
+queue.append(2)
+queue.append(3)
+
+print("Queue after enqueueing elements:", queue)
+
+# Dequeue elements
+front_element = queue.popleft()
+print("Dequeued element:", front_element)
+print("Queue after dequeuing an element:", queue)
+
+# Peek at the front element
+if queue:
+    front_element = queue[0]
+    print("Front element:", front_element)
+    
+
+# Hash Map (Dictionary) Implementation
+hash_map = {}
+
+# Insert key-value pairs
+hash_map['name'] = 'Alice'
+hash_map['age'] = 25
+hash_map['city'] = 'New York'
+
+print("Hash Map after inserting elements:", hash_map)
+
+# Access a value by key
+print("Name:", hash_map['name'])
+
+# Update a value
+hash_map['age'] = 26
+print("Updated age:", hash_map['age'])
+
+# Remove a key-value pair
+del hash_map['city']
+print("Hash Map after removing 'city':", hash_map)
+
+# Check if a key exists
+if 'name' in hash_map:
+    print("'name' key exists in hash map")
+
+# Iterate over the hash map
+for key, value in hash_map.items():
+    print(f"{key}: {value}")
