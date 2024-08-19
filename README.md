@@ -18,3 +18,6 @@
         - Set
         - Tuple
         - Maps
+
+## DAY 2:
+    * Classes
