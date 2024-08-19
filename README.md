@@ -18,6 +18,9 @@
         - Set
         - Tuple
         - Maps
+        - Stacks
+        - Queues
+        - Hash Maps
 
 ## DAY 2:
     * Classes
