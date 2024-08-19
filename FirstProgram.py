@@ -26,11 +26,9 @@ while j >= 10:
     print(j)
     j -= 1
     
-# Python
 def add(a, b):
     return a + b
 
-# Python
 square = lambda x: x * x
 
 num = add(1,2)
@@ -38,6 +36,15 @@ print('Function to add numbers',num)
 
 num = square(5)
 print('Lambda function', num)
+
+# Using lambda with map
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x ** 2, numbers))
+print(squared)
+
+# Using lambda with filter
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)
 
 arr = ['alpha','beta','charlie']
 print('Data Structures - String Array', arr)
@@ -62,3 +69,11 @@ print("Sets:", my_set)
 
 my_tuple = (1,2, 3)
 print('Tuples:',my_tuple)
+
+
+# List of tuples
+pairs = [(1, 'one'), (2, 'two'), (3, 'three')]
+
+# Sort by the second element in each tuple
+sorted_pairs = sorted(pairs, key=lambda x: x[1])
+print(sorted_pairs)
