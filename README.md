@@ -23,7 +23,7 @@ Over 10 days, you'll cover:
 
 ## 🗓️ 10-Day Detailed Program
 
-### 📅 Day 1: Python Foundations
+### 📅 Day 1: July 3rd Python Foundations
 - Install Python, pip, VS Code
 - Variables, data types, operators
 - `print()`, `input()`, string formatting
